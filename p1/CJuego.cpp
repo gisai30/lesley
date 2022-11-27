@@ -20,12 +20,8 @@ CJuego::CJuego (void){
     
     done = false;
     redraw = true;
-    boton=CButton("Kc.png",520,20);
-    botona=CButton("Qd.png",550,20);
-    boton1=CButton("Jt.png",154,154);
-    boton2=CButton("10p.png",164,164);
-    boton3= CButton("azul.png","9t.png",520,520);
-    //boton3= CButton("siguiente.png","siguiente.png",225,225);
+   
+    //boton3= ıCButton("siguiente.png","siguiente.png",225,225);
     
     
     al_start_timer(timer);
@@ -33,6 +29,15 @@ CJuego::CJuego (void){
 
 CJuego::~CJuego(){
     deinit();
+}
+
+void CJuago::CreteDeck() {
+    
+    boton=CButton("Kc.png",520,20);
+    botona=CButton("Qd.png",550,20);
+    boton1=CButton("Jt.png",154,154);
+    boton2=CButton("10p.png",164,164);
+    boton3= CButton("azul.png","9t.png",520,520);
 }
 
 void CJuego::run(){

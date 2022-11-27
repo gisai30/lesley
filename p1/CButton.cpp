@@ -26,6 +26,7 @@ CButton::CButton(const char *archivo, int x, int y)
 
 CButton::CButton(const char *archivo, const char *archivoSobre, int x, int y)
 {
+    
     press=false;
     this->x=x;
     this->y=y;
